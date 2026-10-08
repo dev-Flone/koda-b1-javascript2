@@ -28,6 +28,7 @@ const fakturPembayaran = { ...dataPembeli, ...dataPesanan, statusPembayaran };
 // Destructuring
 const { nama, email, totalHarga, metodePembayaran, namaBarang } =
   fakturPembayaran;
+console.log(fakturPembayaran);
 
 // Membuat output
 console.log(
