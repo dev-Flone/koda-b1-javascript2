@@ -15,21 +15,28 @@ const dataPembeli = {
 };
 const dataPesanan = {
   id: 1,
-  totalHarga: 250000,
+  harga: 250000,
+  jumlah: 3,
   namaBarang: "Dumbell set 40kg",
   metodePembayaran: "Transfer BCA",
 };
 
-let statusPembayaran = "Lunas";
+let statusPembayaran = true;
 
 // Combine Object dengan spread
 const fakturPembayaran = { ...dataPembeli, ...dataPesanan, statusPembayaran };
 
 // Destructuring
-const { nama, email, totalHarga, metodePembayaran, namaBarang } =
+const { nama, email, harga, metodePembayaran, namaBarang, jumlah } =
   fakturPembayaran;
 
-// Membuat output
-console.log(
-  `Pembayaran untuk ${namaBarang} dengan harga Rp.${totalHarga.toLocaleString("id-ID")} sudah dibayar oleh ${nama} (${email}) dengan metode ${metodePembayaran}\nStatus: ${statusPembayaran}`,
-);
+function struk() {
+  let totalHarga = harga * jumlah;
+  if (statusPembayaran) {
+    return `${nama}\n${email}\n==============================\nCheckout:\n${namaBarang} | Rp.${harga.toLocaleString("id-ID")} x ${jumlah}\nTotal: Rp.${totalHarga.toLocaleString("id-ID")}\nTelah dibayar melalui ${metodePembayaran}`;
+  } else {
+    return "Silahkan bayar tagihan anda.";
+  }
+}
+
+console.log(struk());
