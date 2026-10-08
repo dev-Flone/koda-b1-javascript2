@@ -21,10 +21,15 @@ const dataPesanan = {
 };
 
 let statusPembayaran = "Lunas";
+
+// Combine Object dengan spread
 const fakturPembayaran = { ...dataPembeli, ...dataPesanan, statusPembayaran };
 
+// Destructuring
 const { nama, email, totalHarga, metodePembayaran, namaBarang } =
   fakturPembayaran;
+
+// Membuat output
 console.log(
-  `Pembayaran untuk ${namaBarang} dengan harga Rp.${totalHarga.toLocaleString("id-ID")} sudah dibayar oleh ${nama} (${email}) dengan metode ${metodePembayaran}`,
+  `Pembayaran untuk ${namaBarang} dengan harga Rp.${totalHarga.toLocaleString("id-ID")} sudah dibayar oleh ${nama} (${email}) dengan metode ${metodePembayaran}\nStatus: ${statusPembayaran}`,
 );
