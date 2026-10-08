@@ -1,5 +1,5 @@
 const nilai = [70, 85, 80, 90, 75];
-const nilai2 = [75, 80, 65, 90, 85];
+const nilai2 = [75, 80, 65, 80, 85];
 
 let nilaiGabungan = [...nilai, ...nilai2];
 console.log(nilaiGabungan);
