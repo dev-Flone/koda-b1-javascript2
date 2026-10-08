@@ -3,7 +3,7 @@
 flowchart TD
     start((start))
     nilai[/nilai = 70, 85, 80, 90, 75/]
-    nilai2[/nilai = 75, 80, 65, 90, 85/]
+    nilai2[/nilai2 = 75, 80, 65, 80, 85/]
     spread[spread nilai dan nilai2]
     gabungan[/Nilai gabungan = 70, 85, 80, 90, 75, 75, 80, 65, 80, 85/]
     max[/ Nilai max 90 di index 3 /]
