@@ -22,10 +22,24 @@
 
 // Arrow Function
 
-const buatProfile = (nama, umur) => ({
-  namaLengkap: nama,
-  usia: umur,
-  kategori: umur >= 18 ? "Dewasa" : "Anak-anak",
-});
+// const buatProfile = (nama, umur) => ({
+//   namaLengkap: nama,
+//   usia: umur,
+//   kategori: umur >= 18 ? "Dewasa" : "Anak-anak",
+// });
 
-console.log(buatProfile("Budi", 20));
+// console.log(buatProfile("Budi", 20));
+
+// Method
+// const user = {
+//   firstName: "Budi",
+//   lastName: "Santoso",
+//   biasa() {
+//     return this.firstName;
+//   },
+//   fullName: (value) => `Halo, nama saya ${value}`,
+// };
+
+// user.lastName = "Doe";
+
+// console.log(user.fullName("Kairn"));
