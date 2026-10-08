@@ -34,6 +34,4 @@ for (let i = 0; i < nilaiGabungan.length; i++) {
 }
 
 let avg = sum / nilaiGabungan.length;
-
-console.log("Total nilai:", sum);
 console.log("Nilai rata-rata:", avg);
